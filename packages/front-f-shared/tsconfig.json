@@ -1,0 +1,9 @@
+{
+  "extends": "@featured-arch/config/tsconfig/react-front.json",
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
