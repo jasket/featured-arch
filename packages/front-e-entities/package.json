@@ -1,0 +1,14 @@
+{
+  "name": "@front/entities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "@front/shared": "*",
+    "@featured-arch/eslint-config": "*",
+    "@featured-arch/config": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}

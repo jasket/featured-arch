@@ -1,0 +1,18 @@
+{
+  "name": "@front/pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "@front/widgets": "*",
+    "@front/features": "*",
+    "@front/entities": "*",
+    "@front/shared": "*",
+    "@featured-arch/eslint-config": "*",
+    "@featured-arch/config": "*"
+  },
+  "author": "",
+  "license": "ISC"
+}
