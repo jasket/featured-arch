@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@featured-arch/config": "*",
-    "@featured-arch/eslint-config": "*",
     "@front/entities": "*",
     "@front/features": "*",
     "@front/pages": "*",

@@ -8,7 +8,6 @@
     "@front/features": "*",
     "@front/entities": "*",
     "@front/shared": "*",
-    "@featured-arch/eslint-config": "*",
     "@featured-arch/config": "*"
   },
   "author": "",
