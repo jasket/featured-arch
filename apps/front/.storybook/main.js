@@ -1,5 +1,3 @@
-const path = require("path");
-
 module.exports = {
   stories: [
     "../../../packages/front-f-shared/**/*.stories.mdx",
@@ -18,7 +16,7 @@ module.exports = {
       },
     } = config;
     const babelLoader = oneOf.find(({ test }) => new RegExp(test).test(".ts"));
-    babelLoader.include = [/packages\/(.*)\/src/, /.storybook/];
+    babelLoader.include = [/packages\/front-f-shared/, /.storybook/];
     babelLoader.options.sourceType = "unambiguous";
     return config;
   },
