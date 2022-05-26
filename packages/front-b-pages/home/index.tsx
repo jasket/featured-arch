@@ -1,8 +1,8 @@
-import { useDispatch } from "react-redux";
 import { fetchAppInitialize } from "@front/entities/auth";
+import { useAppDispatch } from "@front/entities";
 
 const Home = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const onLogin = () => {
     dispatch(fetchAppInitialize());
@@ -12,7 +12,9 @@ const Home = () => {
     <div>
       <header>
         <p>Home</p>
-        <button className="underline">Login</button>
+        <button className="underline" onClick={onLogin}>
+          Login
+        </button>
       </header>
     </div>
   );

@@ -1,6 +1,6 @@
 import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import { ROUTES } from "../front-f-shared/config";
+import { ROUTES } from "@front/shared";
 import { AuthLayout } from "@front/widgets/layouts";
 
 const Home = lazy(() => import("./home"));
