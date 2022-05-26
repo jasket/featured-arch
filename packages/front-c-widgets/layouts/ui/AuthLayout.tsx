@@ -1,11 +1,13 @@
+import { ROUTES } from "@front/shared/constants";
+import { authSelectors } from "@front/entities/auth";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
-import { ROUTES } from "../model/routes";
+import { useSelector } from "react-redux";
 
-const RequireAuth = () => {
-  let auth = { user: false };
-  let location = useLocation();
+const AuthLayout = () => {
+  const isInit = useSelector(authSelectors.selectIsInitialize);
+  const location = useLocation();
 
-  if (!auth.user) {
+  if (!isInit) {
     // Redirect them to the /login page, but save the current location they were
     // trying to go to when they were redirected. This allows us to send them
     // along to that page after they login, which is a nicer user experience
@@ -13,7 +15,11 @@ const RequireAuth = () => {
     return <Navigate to={ROUTES.home} state={{ from: location }} replace />;
   }
 
-  return <Outlet />;
+  return (
+    <div className="p-2">
+      <Outlet />
+    </div>
+  );
 };
 
-export default RequireAuth;
+export default AuthLayout;

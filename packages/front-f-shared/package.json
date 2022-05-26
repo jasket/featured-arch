@@ -6,11 +6,7 @@
   "scripts": {},
   "private": true,
   "dependencies": {
-    "@featured-arch/config": "*",
-    "@types/react": "^18.0.9",
-    "@types/react-dom": "^18.0.5",
-    "react-dom": "^18.1.0",
-    "react-router-dom": "6"
+    "@featured-arch/config": "*"
   },
   "author": "",
   "license": "ISC"

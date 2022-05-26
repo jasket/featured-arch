@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {},
+  "private": true,
   "dependencies": {
     "@front/shared": "*",
     "@featured-arch/config": "*"

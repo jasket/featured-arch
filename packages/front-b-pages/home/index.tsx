@@ -1,17 +1,21 @@
-const Home = () => (
-  <div className="App">
-    <header className="App-header">
-      <p>Home</p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </header>
-  </div>
-);
+import { useDispatch } from "react-redux";
+import { fetchAppInitialize } from "@front/entities/auth";
+
+const Home = () => {
+  const dispatch = useDispatch();
+
+  const onLogin = () => {
+    dispatch(fetchAppInitialize());
+  };
+
+  return (
+    <div>
+      <header>
+        <p>Home</p>
+        <button className="underline">Login</button>
+      </header>
+    </div>
+  );
+};
 
 export default Home;
