@@ -15,7 +15,7 @@ interface ButtonProps {
    */
   size?: "small" | "medium" | "large";
   /**
-   * Button contents
+   * SimpleButton contents
    */
   label: string;
   /**
@@ -27,7 +27,7 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
+export const SimpleButton = ({
   primary = false,
   size = "medium",
   backgroundColor,

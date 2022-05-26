@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { asyncTimeout } from "@front/shared/helpers";
+import { asyncTimeout } from "@front/shared";
 
 export interface AuthState {
   isInitialize: boolean;

@@ -1,4 +1,4 @@
-import { ROUTES } from "@front/shared/constants";
+import { ROUTES } from "../../../front-f-shared/config";
 import { authSelectors } from "@front/entities/auth";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
